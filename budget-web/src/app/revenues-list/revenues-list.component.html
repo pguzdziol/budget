@@ -1,0 +1,22 @@
+<div class="card my-5">
+  <div class="card-body">
+    <table class="table table-bordered table-striped">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">Category</th>
+          <th scope="col">Planned Revenue</th>
+          <th scope="col">Actual Revenue</th>
+          <th scope="col">Comment</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let revenue of revenues">
+          <td>{{ revenue.revenueCategory }}</td>
+          <td>{{ revenue.plannedAmount }}</td>
+          <td>{{ revenue.actualAmount }}</td>
+          <td>{{ revenue.comment }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
